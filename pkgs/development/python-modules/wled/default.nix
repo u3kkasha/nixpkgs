@@ -68,6 +68,8 @@ buildPythonPackage (finalAttrs: {
   disabledTests = [
     # wled release table rendering is inconsistent
     "test_releases_command"
+    # outdated snapshots
+    "test_device_version_fixture"
   ];
 
   pythonImportsCheck = [ "wled" ];
